@@ -80,6 +80,65 @@
     transform: rotate(90deg) translateY(50%);
 }
 
+/*Transition*/
+
 #click:checked+.click{
     transform: rotate(-115deg) scale(0.85);
+}
+#click:checked~.Cake{
+    z-index: 3 !important;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+/*Cake Modal */
+
+.Cake {
+    width: 75%;
+    height: 85%;
+    position: absolute; left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.Cakelayers{
+    width: 100%;
+    height: 20%;
+    background-color: #cb8944;
+    display: block;
+    border-radius: 50%;
+}
+
+.Cakelayers:nth-child(2){
+    border-radius: 0;
+    position: absolute;
+    top: 22px;
+    z-index: -1;
+}
+
+.Cakelayers:first-child{
+    background-color: white !important;
+}
+
+.Cherry{
+    background-color: red;
+    width: 6px;
+    height: 6px;
+    display: block;
+}
+
+.Cherry:nth-child(1){
+    transform: translateX(1250%);
+}
+.Cherry:nth-child(2){
+    transform: translateX(2200%);
+}
+.Cherry:nth-child(3){
+    transform: translateX(750%);
+}
+.Cherry:nth-child(4){
+    transform: translateX(2800%);
+}
+.Cherry:nth-child(5){
+    transform: translateX(1800%);
 }
