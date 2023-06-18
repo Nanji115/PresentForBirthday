@@ -7,6 +7,22 @@
     <title>HappyBirthdayToYou :3</title>
 </head>
 <body>
+    <div class="HappyBirthday">
+        <div class="letters">H</div>
+        <div class="letters">A</div>
+        <div class="letters">P</div>
+        <div class="letters">P</div>
+        <div class="letters">Y</div>
+        <div class="letters">B</div>
+        <div class="letters">I</div>
+        <div class="letters">R</div>
+        <div class="letters">T</div>
+        <div class="letters">H</div>
+        <div class="letters">D</div>
+        <div class="letters">A</div>
+        <div class="letters">Y</div>
+    </div>
+
     <div class="Wraper">
         <div class="Present">
             <input type="checkbox" id="click">
@@ -24,5 +40,19 @@
             </div>
         </div>
     </div>
+    <script>
+        const z = document.querySelector('.Present')
+        const y = document.querySelector('.HappyBirthday')
+        const x = document.querySelector('.Wraper')
+
+        z.addEventListener('click', show)
+        function show(){
+            y.classList.add('open')
+        }
+        y.addEventListener('click', hide)
+        function hide(){
+            y.classList.remove('open')
+        }
+    </script>
 </body>
 </html>
