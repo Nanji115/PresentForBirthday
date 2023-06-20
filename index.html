@@ -42,22 +42,24 @@
         </div>
     </div>
     <script>
-        const z = document.querySelector('.Present')
+        const z = document.querySelector('.Wraper')
         const y = document.querySelector('.HappyBirthday')
+        const x = document.getElementById('click')
 
-        z.addEventListener('click', show)
-        function show(){
-            y.classList.add('open')
-        }
         z.addEventListener('click', () =>{
-            confetti();
+            if (x.checked){
+                confetti();
+            }
         });
-        y.addEventListener('click', hide)
-        function hide(){
-            y.classList.remove('open')
-        }
-
-
+        
+        z.addEventListener('click', showOrHide)
+        function showOrHide(){
+            if (x.checked) {
+                y.classList.add('open')
+            } else {
+                y.classList.remove('open')
+            }
+        };
     </script>
 </body>
 </html>

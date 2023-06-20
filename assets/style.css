@@ -128,6 +128,7 @@
     width: 6px;
     height: 6px;
     display: block;
+    border-radius: 50%;
 }
 
 .Cherry:nth-child(1){
