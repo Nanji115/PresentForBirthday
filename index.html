@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <title>HappyBirthdayToYou :3</title>
 </head>
 <body>
@@ -43,16 +44,20 @@
     <script>
         const z = document.querySelector('.Present')
         const y = document.querySelector('.HappyBirthday')
-        const x = document.querySelector('.Wraper')
 
         z.addEventListener('click', show)
         function show(){
             y.classList.add('open')
         }
+        z.addEventListener('click', () =>{
+            confetti();
+        });
         y.addEventListener('click', hide)
         function hide(){
             y.classList.remove('open')
         }
+
+
     </script>
 </body>
 </html>
