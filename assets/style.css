@@ -129,22 +129,23 @@
     height: 6px;
     display: block;
     border-radius: 50%;
+
 }
 
 .Cherry:nth-child(1){
-    transform: translateX(1250%);
+    transform: translateX(1150%) translateY(2px);
 }
 .Cherry:nth-child(2){
-    transform: translateX(2200%);
+    transform: translateX(1900%) translateY(2px);
 }
 .Cherry:nth-child(3){
-    transform: translateX(750%);
+    transform: translateX(550%) translateY(2px);
 }
 .Cherry:nth-child(4){
-    transform: translateX(2800%);
+    transform: translateX(2500%) translateY(2px);
 }
 .Cherry:nth-child(5){
-    transform: translateX(1800%);
+    transform: translateX(1400%) translateY(2px);
 }
 
 /* Happy birthday*/
