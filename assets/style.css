@@ -173,40 +173,40 @@
     
 }
 .letters:nth-child(2){
-    animation: bouncingWords 3s infinite 0.2s;
+    animation: bouncingWords 1.5s infinite 0.2s;
 }
 .letters:nth-child(3){
-    animation: bouncingWords 3s infinite 0.4s;
+    animation: bouncingWords 1.5s infinite 0.4s;
 }
 .letters:nth-child(4){
-    animation: bouncingWords 3s infinite 0.6s;
+    animation: bouncingWords 1.5s infinite 0.6s;
 }
 .letters:nth-child(5){
-    animation: bouncingWords 3s infinite 0.8s;
+    animation: bouncingWords 1.5s infinite 0.8s;
 }
 .letters:nth-child(6){
-    animation: bouncingWords 3s infinite 1s;
+    animation: bouncingWords 1.5s infinite 1s;
 }
 .letters:nth-child(7){
-    animation: bouncingWords 3s infinite 1.2s;
+    animation: bouncingWords 1.5s infinite 1.2s;
 }
 .letters:nth-child(8){
-    animation: bouncingWords 3s infinite 1.4s;
+    animation: bouncingWords 1.5s infinite 1.4s;
 }
 .letters:nth-child(9){
-    animation: bouncingWords 3s infinite 1.6s;
+    animation: bouncingWords 1.5s infinite 1.6s;
 }
 .letters:nth-child(10){
-    animation: bouncingWords 3s infinite 1.8s;
+    animation: bouncingWords 1.5s infinite 1.8s;
 }
 .letters:nth-child(11){
-    animation: bouncingWords 3s infinite 2s;
+    animation: bouncingWords 1.5s infinite 2s;
 }
 .letters:nth-child(12){
-    animation: bouncingWords 3s infinite 2.2s;
+    animation: bouncingWords 1.5s infinite 2.2s;
 }
 .letters:nth-child(13){
-    animation: bouncingWords 3s infinite 2.4s;
+    animation: bouncingWords 1.5s infinite 2.4s;
 }
 
 @keyframes bouncingWords {
@@ -219,7 +219,7 @@
         background-position: 300% center;
     }
     50%{
-        transform: translateY(30px);
+        transform: translateY(10px);
         background-position: 200%;
     }
     100%{
