@@ -4,8 +4,10 @@
     box-sizing: border-box;
 }
 :root{
-    --presentColor: #FFCC99;
+    --presentColor: #146B3A;
     --ribbonColor: #FF3333;
+    --baseColor : rgb(255, 238, 173);
+    --phaseColor: rgb(150, 206, 180);
 }
 
 .Wraper{
@@ -15,6 +17,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTExL3Jhd3BpeGVsb2ZmaWNlMl9jbG9zZV91cF9waG90b19vZl9jaHJpc3RtYXNfdHJlZV9ib2tlaF9iYWNrZ3JvdV80ZTFjYWRjNS03OGNiLTQ1Y2YtOWFjOS0zMGIzMzU3NGFmNmFfMS5qcGc.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 /* Present Modal*/
@@ -24,7 +30,7 @@
     width: 250px;
     height: 25%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    position: relative;
+    position: relative; top: 15%;
 }
 
 .Present::before{
@@ -40,7 +46,7 @@
     content: '';
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
-    height: 7%;
+    height: 12%;
     position: absolute;
     z-index: 4;
 }
@@ -69,14 +75,14 @@
 }
 .click::after{
     content: '';
-    position: absolute;left: 50%; top: -85%;
+    position: absolute;left: 50%; top: -75%;
     transform: translateX(-50%);
     width: 0;
     height: 0;
-    border-left: 36px solid transparent;
-    border-right: 36px solid var(--ribbonColor);
-    border-bottom: 36px solid var(--ribbonColor);
-    border-top: 36px solid var(--ribbonColor);
+    border-left: 30px solid transparent;
+    border-right: 30px solid var(--ribbonColor);
+    border-bottom: 30px solid var(--ribbonColor);
+    border-top: 30px solid var(--ribbonColor);
     transform: rotate(90deg) translateY(50%);
 }
 
@@ -169,49 +175,83 @@
     display: inline-block;
 }
 .letters:nth-child(1){
-    animation: bouncingWords 3s infinite;
-    
+    animation: bouncingWords 2s infinite;
 }
 .letters:nth-child(2){
-    animation: bouncingWords 1.5s infinite 0.2s;
+    animation: bouncingWords 2s infinite 0.2s;
 }
 .letters:nth-child(3){
-    animation: bouncingWords 1.5s infinite 0.4s;
+    animation: bouncingWords 2s infinite 0.4s;
 }
 .letters:nth-child(4){
-    animation: bouncingWords 1.5s infinite 0.6s;
+    animation: bouncingWords 2s infinite 0.6s;
 }
 .letters:nth-child(5){
-    animation: bouncingWords 1.5s infinite 0.8s;
+    animation: bouncingWords 2s infinite 0.8s;
 }
 .letters:nth-child(6){
-    animation: bouncingWords 1.5s infinite 1s;
+    animation: bouncingWords 2s infinite 1s;
 }
 .letters:nth-child(7){
-    animation: bouncingWords 1.5s infinite 1.2s;
+    animation: bouncingWords 2s infinite 1.2s;
 }
 .letters:nth-child(8){
-    animation: bouncingWords 1.5s infinite 1.4s;
+    animation: bouncingWords 2s infinite 1.4s;
 }
 .letters:nth-child(9){
-    animation: bouncingWords 1.5s infinite 1.6s;
+    animation: bouncingWords 2s infinite 1.6s;
 }
 .letters:nth-child(10){
-    animation: bouncingWords 1.5s infinite 1.8s;
+    animation: bouncingWords 2s infinite 1.8s;
 }
 .letters:nth-child(11){
-    animation: bouncingWords 1.5s infinite 2s;
+    animation: bouncingWords 2s infinite 2s;
 }
 .letters:nth-child(12){
-    animation: bouncingWords 1.5s infinite 2.2s;
+    animation: bouncingWords 2s infinite 2.2s;
 }
 .letters:nth-child(13){
-    animation: bouncingWords 1.5s infinite 2.4s;
+    animation: bouncingWords 2s infinite 2.4s;
+}
+.letters:nth-child(14){
+    animation: bouncingWords 2s infinite 2.6s;
+}
+
+/* Snow theme */
+.snow, .snow:before, .snow:after {
+    position: absolute;
+    top: -600px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: radial-gradient(5px 5px at 402px 113px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 129px 393px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 97px 527px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 158px 443px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 424px 502px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 563px 432px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 302px 528px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 230px 528px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 454px 270px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 582px 62px, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 510px 190px, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 140px 66px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 35px 375px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 410px 566px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 460px 480px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 289px 568px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 211px 91px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 273px 82px, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 132px 532px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 407px 530px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 310px 21px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 210px 481px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 62px 515px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 306px 527px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 116px 189px, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 274px 151px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 263px 224px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 143px 251px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 227px 422px, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 227px 302px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 309px 292px, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 213px 401px, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 551px 503px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 449px 278px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 328px 238px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 177px 156px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 33px 116px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 155px 352px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 173px 320px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 583px 116px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 193px 350px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 38px 340px, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 378px 352px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 469px 338px, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 92px 448px, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 272px 93px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 406px 300px, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 330px 358px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 56px 206px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 162px 485px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 372px 72px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 141px 100px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 273px 10px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 426px 406px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 58px 347px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 101px 193px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 516px 508px, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 288px 159px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 300px 110px, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 71px 404px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 426px 389px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 306px 284px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 446px 566px, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 28px 82px, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 227px 24px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 38px 572px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 38px 208px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 41px 562px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 539px 136px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 262px 218px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0));
+    background-size: 600px 600px;
+    animation: snow 10s linear infinite;
+    content: "";
+}
+.snow:after {
+    margin-left: -200px;
+    opacity: 0.4;
+    animation-duration: 20s;
+    animation-direction: reverse;
+    filter: blur(3px);
+}
+.snow:before {
+    animation-duration: 30s;
+    animation-direction: reverse;
+    margin-left: -300px;
+    opacity: 0.65;
+    filter: blur(1.5px);
+}
+@keyframes snow {
+    to {
+        transform: translateY(600px);
+   }
 }
 
 @keyframes bouncingWords {
     0%{
-        background: linear-gradient(90deg, rgb(85, 73, 148), rgb(246, 117, 168));
+        background: linear-gradient(90deg, rgb(160, 35, 52), rgb(255, 173, 96));
         background-size: 300%;
         background-clip: text;
         -webkit-background-clip: text;
@@ -219,11 +259,11 @@
         background-position: 300% center;
     }
     50%{
-        transform: translateY(10px);
+        transform: translateY(12px);
         background-position: 200%;
     }
     100%{
-        background: linear-gradient(90deg, rgb(85, 73, 148), rgb(246, 117, 168));
+        background: linear-gradient(90deg, rgb(160, 35, 52), rgb(255, 173, 96));
         background-size: 300%;
         background-clip: text;
         -webkit-background-clip: text;
