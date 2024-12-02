@@ -160,7 +160,7 @@
     height: 75px;
     position: absolute;
     text-align: center;
-    letter-spacing: 15px;
+    letter-spacing: 10px;
     transform: translateY(15px);
     display: none;
     cursor: pointer;
